@@ -1,0 +1,23 @@
+.Card {
+    width: 305px;
+    height: 265px;
+    border: solid transparent 1px;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 24px;
+
+    box-shadow: 0 0 20px 0 #0000001A;
+}
+
+.Card:hover {
+    border: solid #432EAB 1px;
+}
+
+.CardText {
+    display: flex;
+    gap: 14px;
+}

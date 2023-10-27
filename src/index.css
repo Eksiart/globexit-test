@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html body div input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(fonts/ProximaNova/ProximaNova-Regular.eot);
+  src: local('Proxima Nova'), local('ProximaNova'),
+  url(fonts/ProximaNova/ProximaNova-Regular.eot) format('embedded-opentype'),
+  url(fonts/ProximaNova/ProximaNova-Regular.woff) format('woff'),
+  url(fonts/ProximaNova/ProximaNova-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(fonts/ProximaNova/ProximaNova-Bold.eot);
+  src: local('Proxima Nova'), local('ProximaNova'),
+  url(fonts/ProximaNova/ProximaNova-Bold.eot) format('embedded-opentype'),
+  url(fonts/ProximaNova/ProximaNova-Bold.woff) format('woff'),
+  url(fonts/ProximaNova/ProximaNova-Regular.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: #8189A3;
+}
+
+.text-xl {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: #262C40;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #262C40;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 1rem;
+  line-height: 1.125rem;
+}
+
+.text-xs {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-error {
+  color: #d95757;
+}
