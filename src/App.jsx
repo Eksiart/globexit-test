@@ -24,10 +24,6 @@ function App() {
 		}
 	}, [])
 
-	useEffect(() => {
-		fetchUsers();
-	}, []);
-
 	const closeModal = useCallback(() => {
 		setModalData(undefined)
 	}, [])
