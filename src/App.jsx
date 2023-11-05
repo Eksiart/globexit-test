@@ -15,7 +15,7 @@ function App() {
 		try {
 			setError(null)
 			setIsLoading(true);
-			const res = await fetch(`https://globexit.eksiart.ru/?term=${term}`).then(res => res.json())
+			const res = await fetch(`https://globexit.eksiart.ru/api/?term=${term}`).then(res => res.json())
 			setUsers(res)
 		} catch (e) {
 			setError(e.message)
