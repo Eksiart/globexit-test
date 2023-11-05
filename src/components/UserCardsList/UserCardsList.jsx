@@ -4,7 +4,7 @@ import cls from './UserCardsList.module.css';
 
 const UserCardsList = memo(({ users, onUserCardClick }) => {
 
-	if (users?.length <= 0) {
+	if (!Array.isArray(users) || !users || users?.length <= 0) {
 		return (
 			<div className="text-error">
 				Пользователи не найдены

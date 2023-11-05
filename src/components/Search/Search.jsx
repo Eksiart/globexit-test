@@ -9,7 +9,9 @@ const Search = ({ fetchUsers }) => {
 	const debouncedTerm = useDebouncedValue(search, 500)
 
 	useEffect(() => {
-		fetchUsers(debouncedTerm)
+		if (debouncedTerm) {
+			fetchUsers(debouncedTerm)
+		}
 	}, [debouncedTerm, fetchUsers]);
 
 	return (

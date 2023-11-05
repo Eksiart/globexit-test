@@ -2,7 +2,7 @@ import './App.css'
 import Search from "./components/Search/Search.jsx";
 import UserCardsList from "./components/UserCardsList/UserCardsList.jsx";
 import Modal from "./components/Modal/Modal.jsx";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import UserDetailsPopup from "./components/UserDetailsPopup/UserDetailsPopup.jsx";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
 		try {
 			setError(null)
 			setIsLoading(true);
-			const res = await fetch(`https://globexit.eksiart.ru/api/?term=${term}`).then(res => res.json())
+			const res = await fetch(`https://globexit.eksiart.ru/api?term=${term}`).then(res => res.json())
 			setUsers(res)
 		} catch (e) {
 			setError(e.message)
